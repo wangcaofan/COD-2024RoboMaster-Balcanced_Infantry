@@ -1,0 +1,14 @@
+.\chassis\api_trajectory.o: ..\Application\API\Src\api_trajectory.c
+.\chassis\api_trajectory.o: ../Application/API/Inc/api_trajectory.h
+.\chassis\api_trajectory.o: D:\STM32Pro\MDK5\Core\ARM\ARMCC\Bin\..\include\stdint.h
+.\chassis\api_trajectory.o: D:\STM32Pro\MDK5\Core\ARM\ARMCC\Bin\..\include\stdbool.h
+.\chassis\api_trajectory.o: ../Components/Device/Inc/minipc.h
+.\chassis\api_trajectory.o: D:\STM32Pro\MDK5\Core\ARM\ARMCC\Bin\..\include\math.h
+.\chassis\api_trajectory.o: ../Middlewares/ST/ARM/DSP/Inc/arm_math.h
+.\chassis\api_trajectory.o: ../Drivers/CMSIS/Include/core_cm4.h
+.\chassis\api_trajectory.o: ../Drivers/CMSIS/Include/cmsis_version.h
+.\chassis\api_trajectory.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+.\chassis\api_trajectory.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+.\chassis\api_trajectory.o: D:\STM32Pro\MDK5\Core\ARM\ARMCC\Bin\..\include\string.h
+.\chassis\api_trajectory.o: ../Application/Tasks/Inc/config.h
+.\chassis\api_trajectory.o: D:\STM32Pro\MDK5\Core\ARM\ARMCC\Bin\..\include\stdlib.h

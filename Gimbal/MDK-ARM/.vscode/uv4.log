@@ -1,0 +1,22 @@
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'HAL_Template'
+../Bsp/Src/bsp_can.c(166): error: incompatible integer to pointer conversion passing 'uint32_t' (aka 'unsigned int') to parameter of type 'uint32_t *' (aka 'unsigned int *'); take the address with & [-Wint-conversion]
+    CAN1_RxFifo0RxHandler(USER_CAN_RxInstance.StdId,USER_CAN_RxFrameData);
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+                          &
+../Bsp/Src/bsp_can.c(132): note: passing argument to parameter 'StdId' here
+static void CAN1_RxFifo0RxHandler(uint32_t *StdId,uint8_t data[8])
+                                            ^
+../Bsp/Src/bsp_can.c(170): error: incompatible integer to pointer conversion passing 'uint32_t' (aka 'unsigned int') to parameter of type 'uint32_t *' (aka 'unsigned int *'); take the address with & [-Wint-conversion]
+    CAN2_RxFifo0RxHandler(USER_CAN_RxInstance.StdId,USER_CAN_RxFrameData);
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+                          &
+../Bsp/Src/bsp_can.c(145): note: passing argument to parameter 'StdId' here
+static void CAN2_RxFifo0RxHandler(uint32_t *StdId,uint8_t data[8])
+                                            ^
+2 errors generated.
+compiling bsp_can.c...
+compiling bsp_mcu.c...
+".\HAL_Template\HAL_Template.axf" - 2 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:01
