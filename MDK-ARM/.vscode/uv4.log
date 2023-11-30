@@ -1,0 +1,23 @@
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\STM32Pro\MDK5\Core\ARM\ARMCC\Bin'
+Build target 'Chassis'
+compiling VMC_Task.c...
+..\Application\Tasks\Src\VMC_Task.c(32): warning:  #177-D: variable "systick"  was declared but never referenced
+    TickType_t systick = 0;
+..\Application\Tasks\Src\VMC_Task.c(77): error:  #513: a value of type "float" cannot be assigned to an entity of type "float *"
+      VMC_Info->Phi1_dot = Damiao_Motor[Left_Anterior_Joint].Data.Velocity*Rad_to_angle;
+..\Application\Tasks\Src\VMC_Task.c(78): error:  #513: a value of type "float" cannot be assigned to an entity of type "float *"
+      VMC_Info->Phi4_dot = Damiao_Motor[Left_Posterior_Joint].Data.Velocity*Rad_to_angle;
+..\Application\Tasks\Src\VMC_Task.c(82): error:  #32: expression must have arithmetic type
+      VMC_Info->X_C_dot = ((VMC_Info->L1*Phi1_phi2*arm_sin_f32(VMC_Info->Phi3*Angle_to_rad))/Phi2_phi3)*VMC_Info->Phi1_dot + 
+..\Application\Tasks\Src\VMC_Task.c(83): error:  #32: expression must have arithmetic type
+                          ((VMC_Info->L4*phi3_phi4*arm_sin_f32(VMC_Info->Phi2*Angle_to_rad))/Phi2_phi3)*VMC_Info->Phi4_dot ;
+..\Application\Tasks\Src\VMC_Task.c(84): error:  #32: expression must have arithmetic type
+      VMC_Info->Y_C_dot = -((VMC_Info->L1*Phi1_phi2*arm_cos_f32(VMC_Info->Phi3*Angle_to_rad))/Phi2_phi3)*VMC_Info->Phi1_dot 
+..\Application\Tasks\Src\VMC_Task.c(85): error:  #32: expression must have arithmetic type
+                          -((VMC_Info->L4*phi3_phi4*arm_cos_f32(VMC_Info->Phi2*Angle_to_rad))/Phi2_phi3)*VMC_Info->Phi4_dot ;
+..\Application\Tasks\Src\VMC_Task.c(89): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      if(VMC_Info->Theta_Velocity < 0.15)   VMC_Info->Theta_Velocity  = 0;
+..\Application\Tasks\Src\VMC_Task.c: 2 warnings, 6 errors
+".\Chassis\Chassis.axf" - 6 Error(s), 2 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:02

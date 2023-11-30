@@ -1,0 +1,15 @@
+.\chassis\api_quaternion.o: ..\Application\API\Src\api_quaternion.c
+.\chassis\api_quaternion.o: ../Application/API/Inc/api_quaternion.h
+.\chassis\api_quaternion.o: D:\STM32Pro\MDK5\Core\ARM\ARMCC\Bin\..\include\stdint.h
+.\chassis\api_quaternion.o: ../Components/Algorithm/Inc/kalman.h
+.\chassis\api_quaternion.o: ../Middlewares/ST/ARM/DSP/Inc/arm_math.h
+.\chassis\api_quaternion.o: ../Drivers/CMSIS/Include/core_cm4.h
+.\chassis\api_quaternion.o: ../Drivers/CMSIS/Include/cmsis_version.h
+.\chassis\api_quaternion.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+.\chassis\api_quaternion.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+.\chassis\api_quaternion.o: D:\STM32Pro\MDK5\Core\ARM\ARMCC\Bin\..\include\string.h
+.\chassis\api_quaternion.o: D:\STM32Pro\MDK5\Core\ARM\ARMCC\Bin\..\include\math.h
+.\chassis\api_quaternion.o: ../Application/Tasks/Inc/config.h
+.\chassis\api_quaternion.o: D:\STM32Pro\MDK5\Core\ARM\ARMCC\Bin\..\include\stdbool.h
+.\chassis\api_quaternion.o: D:\STM32Pro\MDK5\Core\ARM\ARMCC\Bin\..\include\stdlib.h
+.\chassis\api_quaternion.o: ../Components/Controller/Inc/pid.h
